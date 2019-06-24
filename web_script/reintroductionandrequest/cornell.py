@@ -11,7 +11,9 @@ from selenium import webdriver
 
 
 #change the working directory
-os.chdir('C:\\Users\\messi\\Desktop\\RAnimark\\web_script\\reintroductionandrequest\\')
+os.chdir('/Users/linchenzhang/Desktop/nimark_RA/webscript_factiva/web_script/reintroductionandrequest/')
+# os.chdir('Users\\linchenzhang\\Desktop\\nimark_RA\\webscript_factiva\\web_script\\reintroductionandrequest\\')
+# os.chdir('C:\\Users\\messi\\Desktop\\RAnimark\\web_script\\reintroductionandrequest\\')
 #start and end dates of the scrapesstart_date=168
 start_date=40 # start in 1980 Q1 (for WSJ)
 #start_date=41 # start in 1980 Q2 (for NYT)
@@ -65,7 +67,7 @@ search_term='(the OR a OR an) and la=en and sc=lvgs'
 #search_term='(the OR a OR an) and la=en and sc=cgaz'
 
 
-#load strings used to define 
+#load strings used to define
 f=open("years.txt", "r")
 years = f.readlines()
 years = [a.strip('\n') for a in years]
@@ -96,13 +98,13 @@ end_dates=end_dates[2::3]
 #go to the uppsala library database website
 url = 'https://newcatalog.library.cornell.edu/databases/subject/Economics'
 # url='http://www.ub.uu.se/soktips-och-sokteknik/databaser-a-o/'
-browser=webdriver.Firefox(executable_path=r'C:\Users\messi\Desktop\RAnimark\web_script\reintroductionandrequest\geckodriver.exe')
-
+browser=webdriver.Firefox(executable_path='/Users/linchenzhang/Desktop/nimark_RA/webscript_factiva/web_script/reintroductionandrequest/geckodriver')
+# browser=webdriver.Firefox(executable_path=r'C:\Users\messi\Desktop\RAnimark\web_script\reintroductionandrequest\geckodriver.exe')
 #browser=webdriver.Edge()
 browser.get(url)
 time.sleep(1)
 
-#click on the "I accept cookies button"   
+#click on the "I accept cookies button"
 # ok_button_path="/html/body/div[2]/div/p/button"
 # browser.find_element_by_xpath(ok_button_path).click()
 # time.sleep(1)
@@ -122,7 +124,7 @@ time.sleep(10)
 # time.sleep(10)
 
 for waiting in range(1,500):
-    try: 
+    try:
         #change language to english
         button_settings=browser.find_element_by_xpath("/html/body/div[2]/div/ul[2]/li/a/span")
         button_settings.click()
@@ -134,9 +136,9 @@ for waiting in range(1,500):
         button_english.click()
         time.sleep(3)
         break
-    except: 
-        time.sleep(1) 
-        print("waiting for search path") 
+    except:
+        time.sleep(1)
+        print("waiting for search path")
 
 
 #%%############################################################################
@@ -145,16 +147,16 @@ for waiting in range(1,500):
 
 
 for waiting in range(1,500):
-    try: 
+    try:
         search_path='/html/body/div[2]/div/ul[1]/li[2]/a'
         link2=browser.find_element_by_xpath(search_path)
         link2.click()
         time.sleep(0)
         print('try0')
         break
-    except: 
-        time.sleep(1) 
-        print("waiting for search path") 
+    except:
+        time.sleep(1)
+        print("waiting for search path")
 
 #%%############################################################################
 # enter the region and other search options here (then run rest of code)
@@ -164,6 +166,8 @@ for waiting in range(1,500):
 search_field=browser.find_element_by_id('ftx')
 search_definition=search_term
 print(search_definition)
+print(search_field)
+# search_field.click()
 search_field.send_keys(search_definition)
 
 #switch to date range entry mode and enter the desired date range
@@ -186,29 +190,29 @@ counter=start_date
 
 #for rep in range(start_date,len(quarters)):
 for rep in range(start_date,end_date):
-    
+
     #find the date and search fields
     for waiting in range(1,500):
         try:
-            
+
             #switch to date range entry mode and enter the desired date range
             date_field_path='/html/body/form[2]/div[2]/div[2]/div/table/tbody/tr[2]/td/div[1]/div[1]/table/tbody/tr/td[2]/div[3]/div[1]/table/tbody/tr/td[1]/select/option[10]'
             date_field=browser.find_element_by_xpath(date_field_path)
-            date_field.click()       
+            date_field.click()
             date1=browser.find_element_by_xpath('//*[@id="frdt"]')
             date2=browser.find_element_by_xpath('//*[@id="todt"]')
             search_field=browser.find_element_by_xpath('//*[@id="ftx"]')
             print('try1')
             break
-        except: 
-            time.sleep(1) 
+        except:
+            time.sleep(1)
             print('wait1')
-            print("waiting for date and search fields") 
-    
+            print("waiting for date and search fields")
+
     #enter the dates
     for waiting in range(1,500):
-        try: 
-            date1.clear() 
+        try:
+            date1.clear()
             date2.clear()
             search_field.clear()
             date1.send_keys(start_dates[rep])
@@ -216,32 +220,32 @@ for rep in range(start_date,end_date):
             search_field.send_keys(search_definition)
             print('try2')
             break
-        except: 
-            time.sleep(1) 
+        except:
+            time.sleep(1)
             print('wait2')
-            print("waiting to enter dates and search term") 
-   
+            print("waiting to enter dates and search term")
+
     #press the search button
     for waiting in range(1,50):
-        try: 
+        try:
             submit=browser.find_element_by_xpath('/html/body/form[2]/div[2]/div[2]/div/div[2]/ul/li[2]/input')
-            time.sleep(1) 
+            time.sleep(1)
             submit.click()
             print('try3')
             break
-        except: 
-            time.sleep(1) 
-            print("waiting for the search button")    
-     
-    #scrape the FIRST page of the main data        
+        except:
+            time.sleep(1)
+            print("waiting for the search button")
+
+    #scrape the FIRST page of the main data
     for waiting in range(1,50):
-        try: 
+        try:
             headlines_current=save_all_of_class(browser,'enHeadline')
             leadfields_current=save_all_of_class(browser,'leadFields')
             paragraphs_current=save_all_of_class(browser,'ensnippet')
             headlines_all.append(headlines_current)
             details_all.append(leadfields_current)
-            paragraphs_all.append(paragraphs_current)  
+            paragraphs_all.append(paragraphs_current)
             #hitsCount
             count=browser.find_elements_by_class_name('hitsCount')[1].text
             count=re.sub('[^0-9]',"",count)
@@ -250,12 +254,12 @@ for rep in range(start_date,end_date):
             #store the entire headline frame
             headline_frames_all.append(browser.find_element_by_id('headlineFrame'))
             article_frames_all.append(browser.find_element_by_id('articleFrame'))
-            
+
             #find the "more companies button" and click many times to make all 100 entries visible
             show_more_button="/html/body/form[2]/div[2]/div[2]/div[5]/div[2]/div[1]/div/div[2]/div/div[2]/div/div/span[1]"
-            
+
             n_comp=0
-            for i in range(0,100): 
+            for i in range(0,100):
                 #count the number of companies shown
                 company_names_all_path="/html/body/form[2]/div[2]/div[2]/div[5]/div[2]/div[1]/div/div[2]/div/div[2]/div/div/ul"
                 company_names_all=browser.find_element_by_xpath(company_names_all_path).text
@@ -263,31 +267,31 @@ for rep in range(start_date,end_date):
                 print("number of companies found: " + str(n_comp))
                 if n_comp<100: browser.find_element_by_xpath(show_more_button).click()
                 if n_comp==100: break
-                        
+
             #construct list of the relevant xpaths for company names and corresponding article counts
             comp_name_x_paths=["/html/body/form[2]/div[2]/div[2]/div[5]/div[2]/div[1]/div/div[2]/div/div[2]/div/div/ul/li[" + str(i) + "]/span[2]/span[1]" for i in range(1,n_comp+1)]
             comp_count_x_paths=["/html/body/form[2]/div[2]/div[2]/div[5]/div[2]/div[1]/div/div[2]/div/div[2]/div/div/ul/li[" + str(i) + "]/span[2]/span[2]" for i in range(1,n_comp+1)]
-            
+
             #extract the actuall 100 company names and the corresponding counts
             comp_names=[browser.find_element_by_xpath(comp_name_x_paths[i]).text for i in range(0,len(comp_name_x_paths))]
             comp_counts=[browser.find_element_by_xpath(comp_count_x_paths[i]).text for i in range(0,len(comp_count_x_paths))]
-            
+
             #construct other variables to be saved
             df_current=pd.DataFrame([comp_names,comp_counts]).T
             df_current.columns=['comp_name','comp_count']
             df_current['n_comp']=n_comp
             df_current['n_articles']=count
             df_current['start_date']=start_dates[rep]
-            df_current['end_date']=end_dates[rep] 
+            df_current['end_date']=end_dates[rep]
             break
-        
-        
-        
-        
-        except: 
-            time.sleep(1) 
-            print("waiting for first page of results") 
-   
+
+
+
+
+        except:
+            time.sleep(1)
+            print("waiting for first page of results")
+
     #go back to the search page
     df_all=df_all.append(df_current)
     browser.get("https://global.factiva.com/sb/default.aspx")
@@ -298,6 +302,3 @@ for rep in range(start_date,end_date):
 
 df_all['search_term']=search_term
 df_all.to_excel('company_scraper_LVGS_temp.xlsx',index=False)
-
-
-

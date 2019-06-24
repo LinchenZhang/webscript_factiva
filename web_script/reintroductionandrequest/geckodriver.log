@@ -244,3 +244,86 @@ JavaScript error: resource:///actors/AboutReaderChild.jsm, line 80: NS_ERROR_UNE
 
 ###!!! [Child][MessageChannel] Error: (msgtype=0x360113,name=PContent::Msg_DetachBrowsingContext) Closed channel: cannot send/recv
 
+1561349074128	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/9d/rf8l3pqn2z7_34fyw6w8qfhh0000gn/T/rust_mozprofile.sQMr5XDety2C"
+1561349074728	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561349074728	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561349074728	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561349076643	Marionette	INFO	Listening on port 64091
+1561349076711	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221561148779474%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1561349123855	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561352447091	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/9d/rf8l3pqn2z7_34fyw6w8qfhh0000gn/T/rust_mozprofile.Z5UlQuPTCPPN"
+1561352447628	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561352447628	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561352447629	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561352449495	Marionette	INFO	Listening on port 64510
+1561352449545	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221561148779474%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1561352492348	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+2019-06-24 01:06:32.244 firefox-bin[52868:2333072] -deltaZ is deprecated for NSEventTypeMagnify.  Please use -magnification.
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 444: TypeError: window.content is null
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 444: TypeError: window.content is null
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 444: TypeError: window.content is null
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 463: TypeError: window.content is null
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 444: TypeError: window.content is null
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 444: TypeError: window.content is null
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 463: TypeError: window.content is null
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 444: TypeError: window.content is null
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 463: TypeError: window.content is null
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 444: TypeError: window.content is null
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 463: TypeError: window.content is null
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 444: TypeError: window.content is null
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 444: TypeError: window.content is null
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 463: TypeError: window.content is null
+2019-06-24 01:15:39.323 firefox-bin[52868:2333072] warning: <NSRemoteView: 0x124a0ad80> determined it was necessary to configure <_NSPopoverWindow: 0x124798ee0> to support remote view vibrancy
+1561354225314	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/9d/rf8l3pqn2z7_34fyw6w8qfhh0000gn/T/rust_mozprofile.iugjDwPNSamh"
+1561354225910	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561354225910	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561354225911	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561354227812	Marionette	INFO	Listening on port 49346
+1561354227870	Marionette	WARN	TLS certificate errors will be ignored for this session
+1561354233234	Marionette	INFO	Stopped listening on port 64091
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221561148779474%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1561354274088	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561354388773	Marionette	INFO	Stopped listening on port 49346
+1561354394959	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/9d/rf8l3pqn2z7_34fyw6w8qfhh0000gn/T/rust_mozprofile.FTvDVMCe24Ft"
+1561354395490	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561354395490	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561354395490	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561354397382	Marionette	INFO	Listening on port 49704
+1561354397445	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221561148779474%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1561354445413	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561354534722	Marionette	INFO	Stopped listening on port 49704
