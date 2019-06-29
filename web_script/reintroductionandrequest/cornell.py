@@ -116,7 +116,7 @@ time.sleep(1)
 # factiva_path='//*[@id="F"]'
 link=browser.find_element_by_link_text('Factiva')
 link.click()
-time.sleep(10)
+time.sleep(1)
 
 #switch to popup and wait
 # handle_new=browser.window_handles[1]
@@ -207,8 +207,15 @@ for rep in range(start_date,end_date):
             date_field_path='/html/body/form[2]/div[2]/div[2]/div/table/tbody/tr[2]/td/div[1]/div[1]/table/tbody/tr/td[2]/div[3]/div[1]/table/tbody/tr/td[1]/select/option[10]'
             date_field=browser.find_element_by_xpath(date_field_path)
             date_field.click()
-            date1=browser.find_element_by_xpath('//*[@id="frdt"]')
-            date2=browser.find_element_by_xpath('//*[@id="todt"]')
+            # date1=browser.find_element_by_xpath('//*[@id="frdt"]')
+            # date2=browser.find_element_by_xpath('//*[@id="todt"]')
+            day1=browser.find_element_by_xpath('//*[@id="frd"]')
+            day2=browser.find_element_by_xpath('//*[@id="tod"]')
+            month1=browser.find_element_by_xpath('//*[@id="frm"]')
+            month2=browser.find_element_by_xpath('//*[@id="tom"]')
+            year1=browser.find_element_by_xpath('//*[@id="fry"]')
+            year2=browser.find_element_by_xpath('//*[@id="toy"]')
+
             search_field=browser.find_element_by_xpath('//*[@id="ftx"]')
             print('try1')
             break
@@ -220,18 +227,71 @@ for rep in range(start_date,end_date):
     #enter the dates
     for waiting in range(1,500):
         try:
-            date1.clear()
-            date2.clear()
+            start = start_dates[rep]
+            y1 = start[:4]
+            m1 = start[4:6]
+            d1 = start[6:]
+            end = end_dates[rep]
+            y2 = end[:4]
+            m2 = end[4:6]
+            d2 = end[6:]
+
+            day1.clear()
+            day1.click()
+            day1.send_keys(d1)
+            day2.clear()
+            day2.click()
+            day2.send_keys(d2)
+
+            month1.clear()
+            month1.click()
+            month1.send_keys(m1)
+            month2.clear()
+            month2.click()
+            month2.send_keys(m2)
+
+            year1.clear()
+            year1.click()
+            year1.send_keys(y1)
+            year2.clear()
+            year2.click()
+            year2.send_keys(y2)
+
             search_field.clear()
-            date1.send_keys(start_dates[rep])
-            date2.send_keys(end_dates[rep])
+            search_field.click()
             search_field.send_keys(search_definition)
             print('try2')
             break
+            
         except:
             time.sleep(1)
             print('wait2')
             print("waiting to enter dates and search term")
+
+        # try:
+        #     print("start_date")
+        #     print(start_dates)
+        #     print(start_dates[rep])
+        #     date1.clear()
+        #     date1.click()
+        #     date1.send_keys(start_dates[rep])
+        #
+        #     print("end_date")
+        #     print(end_dates)
+        #     print(end_dates[rep])
+        #     date2.clear()
+        #     date2.click()
+        #     date2.send_keys(end_dates[rep])
+        #
+        #     search_field.clear()
+        #     search_field.click()
+        #     search_field.send_keys(search_definition)
+        #     print('try2')
+        #     break
+        # except:
+        #     time.sleep(1)
+        #     print('wait2')
+        #     print("waiting to enter dates and search term")
 
     #press the search button
     for waiting in range(1,50):
