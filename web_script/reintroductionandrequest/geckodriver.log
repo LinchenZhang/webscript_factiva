@@ -327,3 +327,945 @@ console.error: BroadcastService:
 1561354445413	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
 bail@chrome://marionette/content/sync.js:223:64
 1561354534722	Marionette	INFO	Stopped listening on port 49704
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 444: TypeError: window.content is null
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 444: TypeError: window.content is null
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 444: TypeError: window.content is null
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 463: TypeError: window.content is null
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 444: TypeError: window.content is null
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 444: TypeError: window.content is null
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 444: TypeError: window.content is null
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 444: TypeError: window.content is null
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 444: TypeError: window.content is null
+JavaScript error: chrome://browser/content/browser-gestureSupport.js, line 463: TypeError: window.content is null
+console.warn: "Error while detaching the thread front: No such actor for ID: server1.conn0.child1/workerTarget496/context1"
+JavaScript error: resource://devtools/server/actors/inspector/event-collector.js, line 269: TypeError: global is null
+JavaScript error: resource://devtools/server/actors/inspector/event-collector.js, line 269: TypeError: global is null
+JavaScript error: resource://devtools/server/actors/inspector/event-collector.js, line 269: TypeError: global is null
+JavaScript error: resource://devtools/server/actors/inspector/event-collector.js, line 269: TypeError: global is null
+console.error: "Error while calling actor 'pagestyle's method 'getLayout'" "can't access dead object"
+console.error: "getLayout@resource://devtools/server/actors/styles.js:837:24\nhandler@resource://devtools/shared/protocol.js:1189:37\nonPacket@resource://devtools/server/main.js:1291:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:66:16\n"
+console.error: "Protocol error (unknownError): can't access dead object"
+console.warn: "Error while detaching the thread front: 'detach' request packet to 'server1.conn0.child1/context19' can't be sent as the connection is closed."
+1561389083685	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/9d/rf8l3pqn2z7_34fyw6w8qfhh0000gn/T/rust_mozprofile.WQ7I7bF7JmsL"
+1561389084244	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561389084244	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561389084244	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561389086184	Marionette	INFO	Listening on port 55028
+1561389086253	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221561148779474%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1561390539823	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+1561390541758	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+1561390543140	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+1561390544505	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+1561390545896	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+1561390547315	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+1561392566211	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+1561392567631	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+1561392569055	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+1561392570512	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+1561392572305	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global.factiva.com/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: resource:///actors/NetErrorChild.jsm, line 749: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIStringBundle.GetStringFromName]
+JavaScript error: , line 0: AbortError: A request was aborted, for example through a call to IDBTransaction.abort.
+JavaScript error: , line 0: uncaught exception: null
+1561692745754	Marionette	INFO	Stopped listening on port 64510
+1561692748560	Marionette	INFO	Stopped listening on port 55028
+1561692785386	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/9d/rf8l3pqn2z7_34fyw6w8qfhh0000gn/T/rust_mozprofile.MUM2WRFTPMLE"
+1561692785962	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561692785962	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561692785962	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561692788058	Marionette	INFO	Listening on port 51060
+1561692788074	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221561680011759%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1561692852751	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561693132986	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/9d/rf8l3pqn2z7_34fyw6w8qfhh0000gn/T/rust_mozprofile.QhbY8dSWaXsf"
+1561693133530	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561693133530	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561693133530	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561693135211	Marionette	INFO	Listening on port 51354
+1561693135262	Marionette	WARN	TLS certificate errors will be ignored for this session
+1561693182826	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561693638476	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/9d/rf8l3pqn2z7_34fyw6w8qfhh0000gn/T/rust_mozprofile.arE1xKWATusR"
+1561693639026	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561693639026	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561693639026	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561693640982	Marionette	INFO	Listening on port 51675
+1561693641051	Marionette	WARN	TLS certificate errors will be ignored for this session
+1561693682145	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561693685874	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561693689602	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561693693333	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561693993508	Marionette	INFO	Stopped listening on port 51675
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221561680011759%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1561694219044	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/9d/rf8l3pqn2z7_34fyw6w8qfhh0000gn/T/rust_mozprofile.axiqdRwxenDC"
+1561694219575	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561694219575	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561694219575	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561694221505	Marionette	INFO	Listening on port 51972
+1561694221517	Marionette	WARN	TLS certificate errors will be ignored for this session
+1561694270767	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561694274493	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561694278223	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561694281954	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561694429306	Marionette	INFO	Stopped listening on port 51060
+1561694431888	Marionette	INFO	Stopped listening on port 51354
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221561680011759%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+JavaScript error: https://global-factiva-com.proxy.library.cornell.edu/jquery/jquery.bundle0240800ui4sr.ashx, line 23: TypeError: n.parentNode is null
+1561694823245	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/9d/rf8l3pqn2z7_34fyw6w8qfhh0000gn/T/rust_mozprofile.Ph2gbuB0s2sI"
+1561694823816	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561694823816	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561694823817	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561694825794	Marionette	INFO	Listening on port 52459
+1561694825830	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221561680011759%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1561694877995	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+console.warn: "Error while detaching the thread front: 'detach' request packet to 'server1.conn0.child1/context19' can't be sent as the connection is closed."
+JavaScript error: moz-extension://06a22363-1878-454f-9698-96cd1aa6870c/background.js, line 12: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://06a22363-1878-454f-9698-96cd1aa6870c/background.js, line 12: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://06a22363-1878-454f-9698-96cd1aa6870c/background.js, line 12: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://06a22363-1878-454f-9698-96cd1aa6870c/background.js, line 12: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://06a22363-1878-454f-9698-96cd1aa6870c/background.js, line 12: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://06a22363-1878-454f-9698-96cd1aa6870c/background.js, line 12: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://06a22363-1878-454f-9698-96cd1aa6870c/background.js, line 12: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://06a22363-1878-454f-9698-96cd1aa6870c/background.js, line 12: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://06a22363-1878-454f-9698-96cd1aa6870c/background.js, line 12: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://06a22363-1878-454f-9698-96cd1aa6870c/background.js, line 12: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://06a22363-1878-454f-9698-96cd1aa6870c/background.js, line 12: Error: Could not establish connection. Receiving end does not exist.
+2019-06-28 00:22:45.044 firefox-bin[60558:3023409] -deltaZ is deprecated for NSEventTypeMagnify.  Please use -magnification.
+JavaScript error: moz-extension://06a22363-1878-454f-9698-96cd1aa6870c/background.js, line 12: Error: Could not establish connection. Receiving end does not exist.
+2019-06-28 00:23:00.973 firefox-bin[60558:3023409] warning: <NSRemoteView: 0x11d9a5de0> determined it was necessary to configure <_NSPopoverWindow: 0x129f534c0> to support remote view vibrancy
+JavaScript error: moz-extension://06a22363-1878-454f-9698-96cd1aa6870c/background.js, line 12: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://06a22363-1878-454f-9698-96cd1aa6870c/background.js, line 12: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://06a22363-1878-454f-9698-96cd1aa6870c/background.js, line 12: Error: Could not establish connection. Receiving end does not exist.
+2019-06-28 00:23:17.660 firefox-bin[60558:3023409] warning: <NSRemoteView: 0x120b6f020> determined it was necessary to configure <_NSPopoverWindow: 0x11db69ee0> to support remote view vibrancy
+JavaScript error: moz-extension://06a22363-1878-454f-9698-96cd1aa6870c/background.js, line 12: Error: Could not establish connection. Receiving end does not exist.
+1561766890450	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/9d/rf8l3pqn2z7_34fyw6w8qfhh0000gn/T/rust_mozprofile.YzIpWP9G2kms"
+1561766891106	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561766891107	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561766891107	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561766893219	Marionette	INFO	Listening on port 50588
+1561766893320	Marionette	WARN	TLS certificate errors will be ignored for this session
+1561766954679	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+JavaScript error: moz-extension://62497a7f-c851-fa4d-b5a5-a9fc784456a3/background.js, line 12: Error: Could not establish connection. Receiving end does not exist.
+JavaScript error: moz-extension://62497a7f-c851-fa4d-b5a5-a9fc784456a3/background.js, line 12: Error: Could not establish connection. Receiving end does not exist.
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221561710153920%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1561774022079	Marionette	INFO	Stopped listening on port 50588
+1561774027052	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/9d/rf8l3pqn2z7_34fyw6w8qfhh0000gn/T/rust_mozprofile.U53HYVOppN22"
+1561774027558	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561774027559	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561774027559	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561774029282	Marionette	INFO	Listening on port 52753
+1561774029305	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221561710153920%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1561774080717	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+Log warning: The log 'Services.Common.RESTRequest' is configured to use the preference 'services.common.log.logger.rest.request' - you must adjust the level by setting this preference, not by using the level setter
+1561774362263	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/9d/rf8l3pqn2z7_34fyw6w8qfhh0000gn/T/rust_mozprofile.iJS1fsrpB9no"
+1561774362758	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561774362758	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561774362759	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561774364489	Marionette	INFO	Listening on port 53117
+1561774364511	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221561710153920%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1561774416401	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561774705443	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/9d/rf8l3pqn2z7_34fyw6w8qfhh0000gn/T/rust_mozprofile.4WaeQMORUyyU"
+1561774705959	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561774705960	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561774705960	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561774707725	Marionette	INFO	Listening on port 53422
+1561774707797	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221561710153920%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1561774755717	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561774941937	Marionette	INFO	Stopped listening on port 53117
+1561775048397	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/9d/rf8l3pqn2z7_34fyw6w8qfhh0000gn/T/rust_mozprofile.qAmuu4io53lj"
+1561775048880	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561775048880	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561775048880	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561775050620	Marionette	INFO	Listening on port 53755
+1561775050642	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221561710153920%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1561775097408	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+JavaScript error: resource://gre/modules/WebProgressChild.jsm, line 61: TypeError: this.mm.content is null
+JavaScript error: https://mail.google.com/_/scs/mail-static/_/js/k=gmail.main.zh_CN.mDG9gq61T18.O/am=vyBhQPgEkZPwOO4ZHWCAIZQkh_1v4qn0Vy_rB_yJJtcBtP_RBwAAAAAAAAAAAAAAAAAAAHtoWiE/d=1/im=1/dg=0/rs=AHGWq9DDh8e45-cseP64mVrTOZ9pCzJNXw/m=b, line 497: NS_ERROR_NOT_INITIALIZED: 
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x530005,name=PHttpChannel::Msg_Cancel) Closed channel: cannot send/recv
+
+1561775314455	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/9d/rf8l3pqn2z7_34fyw6w8qfhh0000gn/T/rust_mozprofile.Gquq57gl4hp9"
+1561775315020	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561775315021	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561775315021	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561775316899	Marionette	INFO	Listening on port 54036
+1561775316926	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221561710153920%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1561775373881	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561775415588	Marionette	INFO	Stopped listening on port 53422
+1561775417135	Marionette	INFO	Stopped listening on port 53755
+1561775418782	Marionette	INFO	Stopped listening on port 54036
+1561775458000	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/9d/rf8l3pqn2z7_34fyw6w8qfhh0000gn/T/rust_mozprofile.VqjhxRgRNR0a"
+1561775458496	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561775458496	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561775458497	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561775460249	Marionette	INFO	Listening on port 54318
+1561775460344	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221561710153920%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1561775505202	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561775893763	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/9d/rf8l3pqn2z7_34fyw6w8qfhh0000gn/T/rust_mozprofile.DgLUWVKnQdH1"
+1561775894278	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561775894278	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561775894278	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561775896122	Marionette	INFO	Listening on port 54899
+1561775896132	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221561710153920%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1561775946131	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561775988435	Marionette	INFO	Stopped listening on port 54318
+1561775991064	Marionette	INFO	Stopped listening on port 54899
+1561776278900	Marionette	INFO	Stopped listening on port 52753
+1561776283328	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/9d/rf8l3pqn2z7_34fyw6w8qfhh0000gn/T/rust_mozprofile.QxgLUeHpupe9"
+1561776283889	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561776283889	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561776283889	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561776285710	Marionette	INFO	Listening on port 55273
+1561776285806	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221561710153920%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1561776331757	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561776843199	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+openRemotePrompt@resource://gre/modules/Prompter.jsm:508:17
+openPrompt@resource://gre/modules/Prompter.jsm:543:17
+alertCheck@resource://gre/modules/Prompter.jsm:630:14
+validateSb@https://global-factiva-com.proxy.library.cornell.edu/controls/search/SearchBuilder0240800ui4sr.ashx:1:23188
+onsubmit@https://global-factiva-com.proxy.library.cornell.edu/sb/default.aspx?NAPC=S:1:8
+event.synthesizeMouseAtPoint@chrome://marionette/content/event.js:202:14
+webdriverClickElement@chrome://marionette/content/interaction.js:183:11

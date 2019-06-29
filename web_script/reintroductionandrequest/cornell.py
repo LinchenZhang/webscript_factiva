@@ -161,9 +161,17 @@ for waiting in range(1,500):
 #%%############################################################################
 # enter the region and other search options here (then run rest of code)
 ###############################################################################
-
+# genius_bar = '/html/body/form[2]/div[2]/div[2]/div/table/tbody/tr[2]/td/div[1]/div[1]/table/tbody/tr/td[2]/div[2]/div[1]/span/div/div'
+# genius_bar = '/html/body/form[2]/div[2]/div[2]/div/table/tbody/tr[2]/td/div[1]/div[1]/table/tbody/tr/td[2]/div[2]/div[1]/span/div/label[2]'
+# genius_bar_button = browser.find_element_by_xpath(genius_bar)
+# genius_bar_button.click()
+# new_ftx = '/html/body/form[2]/div[2]/div[2]/div/table/tbody/tr[2]/td/div[1]/div[1]/table/tbody/tr/td[2]/div[2]/div[1]/span/div/div'
+new_ftx = '/html/body/form[2]/div[2]/div[2]/div/table/tbody/tr[2]/td/div[1]/div[1]/table/tbody/tr/td[2]/div[2]/div[2]/div/div[1]/div[2]/div'
 #identify the search field and enter the desired search text
+
 search_field=browser.find_element_by_id('ftx')
+search_field.click()
+# search_field=browser.find_element_by_xpath(new_ftx)
 search_definition=search_term
 print(search_definition)
 print(search_field)
