@@ -262,7 +262,7 @@ for rep in range(start_date,end_date):
             search_field.send_keys(search_definition)
             print('try2')
             break
-            
+
         except:
             time.sleep(1)
             print('wait2')
@@ -362,7 +362,8 @@ for rep in range(start_date,end_date):
 
     #go back to the search page
     df_all=df_all.append(df_current)
-    browser.get("https://global.factiva.com/sb/default.aspx")
+    # browser.get("https://global.factiva.com/sb/default.aspx")
+    browser.get("https://global-factiva-com.proxy.library.cornell.edu/sb/default.aspx?NAPC=S")
 
 ###############################################################################
 # Export the Results
