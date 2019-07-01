@@ -11,7 +11,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 #change the working directory
-os.chdir('C:\\Users\\messi\\Desktop\\RAnimark\\web_script\\reintroductionandrequest\\')
+# os.chdir('C:\\Users\\messi\\Desktop\\RAnimark\\web_script\\reintroductionandrequest\\')
+os.chdir('/Users/linchenzhang/Desktop/nimark_RA/webscript_factiva/web_script/reintroductionandrequest/')
 
 # os.chdir('C:\\Users\\stepi468\\Dropbox\\Studies\\Research\\CN Sectors and news focus\\news_data\\factiva_sector_scraper\\')
 #%%############################################################################
@@ -54,27 +55,31 @@ names_scraped=data_unmatched.comp_name.tolist()
 #scraped_names=sorted(list(set(unmatched.name.tolist())))
 
 #go to the uppsala library database website
-url='http://www.ub.uu.se/soktips-och-sokteknik/databaser-a-o/'
-browser=webdriver.Firefox()
+# url='http://www.ub.uu.se/soktips-och-sokteknik/databaser-a-o/'
+url = 'https://newcatalog.library.cornell.edu/databases/subject/Economics'
+browser=webdriver.Firefox(executable_path='/Users/linchenzhang/Desktop/nimark_RA/webscript_factiva/web_script/reintroductionandrequest/geckodriver')
+
+# browser=webdriver.Firefox()
 #browser=webdriver.Edge()
 browser.get(url)
 time.sleep(1)
 
 #click on the "I accept cookies button"
-ok_button_path="/html/body/div[2]/div/p/button"
-browser.find_element_by_xpath(ok_button_path).click()
-time.sleep(1)
+# ok_button_path="/html/body/div[2]/div/p/button"
+# browser.find_element_by_xpath(ok_button_path).click()
+# time.sleep(1)
 
 #click the factiva link to get access via the uppsala licence
 factiva_path='//*[@id="F"]'
-link=browser.find_element_by_xpath(factiva_path)
+# link=browser.find_element_by_xpath(factiva_path)
+link=browser.find_element_by_link_text('Factiva')
 link.click()
 time.sleep(3)
 
 #switch to popup and wait
-handle_new=browser.window_handles[1]
-browser.switch_to_window(handle_new)
-time.sleep(10)
+# handle_new=browser.window_handles[1]
+# browser.switch_to_window(handle_new)
+# time.sleep(10)
 
 #switch to english
 for waiting in range(1,500):

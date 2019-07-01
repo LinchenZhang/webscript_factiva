@@ -15,12 +15,12 @@ os.chdir('/Users/linchenzhang/Desktop/nimark_RA/webscript_factiva/web_script/rei
 # os.chdir('Users\\linchenzhang\\Desktop\\nimark_RA\\webscript_factiva\\web_script\\reintroductionandrequest\\')
 # os.chdir('C:\\Users\\messi\\Desktop\\RAnimark\\web_script\\reintroductionandrequest\\')
 #start and end dates of the scrapesstart_date=168
-start_date=40 # start in 1980 Q1 (for WSJ)
-#start_date=41 # start in 1980 Q2 (for NYT)
+# start_date=40 # start in 1980 Q1 (for WSJ)
+start_date=41 # start in 1980 Q2 (for NYT)
 #start_date=108 # start in 1997 Q1 (for USAT) (company information starts only in 1997)
 #start_date=108 # start in 1997 Q1 (for atjc) (company information starts only in 1997)
 #start_date=108 # start in 1997 Q1 (for bstngb) (company information starts only in 1997)
-start_date=108 # start in 1997 Q1 (for cgaz) (company information starts only in 1997)
+# start_date=108 # start in 1997 Q1 (for cgaz) (company information starts only in 1997)
 
 
 
@@ -59,11 +59,11 @@ def save_all_of_class(browser,classname):
 
 
 #search_term='(the OR a OR an) and la=en and sc=j'
-#search_term='(the OR a OR an) and la=en and sc=nytf'
+search_term='(the OR a OR an) and la=en and sc=nytf'
 #search_term='(the OR a OR an) and la=en and sc=usat'
 #search_term='(the OR a OR an) and la=en and sc=atjc'
 #search_term='(the OR a OR an) and la=en and sc=bstngb'
-search_term='(the OR a OR an) and la=en and sc=lvgs'
+# search_term='(the OR a OR an) and la=en and sc=lvgs'
 #search_term='(the OR a OR an) and la=en and sc=cgaz'
 
 
@@ -370,4 +370,4 @@ for rep in range(start_date,end_date):
 ###############################################################################
 
 df_all['search_term']=search_term
-df_all.to_excel('company_scraper_LVGS_temp.xlsx',index=False)
+df_all.to_excel('company_scraper_nytf_from1980_temp.xlsx',index=False)
