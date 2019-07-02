@@ -15,6 +15,7 @@ os.chdir('/Users/linchenzhang/Desktop/nimark_RA/webscript_factiva/web_script/rei
 # os.chdir('Users\\linchenzhang\\Desktop\\nimark_RA\\webscript_factiva\\web_script\\reintroductionandrequest\\')
 # os.chdir('C:\\Users\\messi\\Desktop\\RAnimark\\web_script\\reintroductionandrequest\\')
 #start and end dates of the scrapesstart_date=168
+
 # start_date=40 # start in 1980 Q1 (for WSJ)
 start_date=41 # start in 1980 Q2 (for NYT)
 #start_date=108 # start in 1997 Q1 (for USAT) (company information starts only in 1997)
@@ -59,13 +60,14 @@ def save_all_of_class(browser,classname):
 
 
 #search_term='(the OR a OR an) and la=en and sc=j'
-search_term='(the OR a OR an) and la=en and sc=nytf'
+# search_term='(the OR a OR an) and la=en and sc=nytf'
 #search_term='(the OR a OR an) and la=en and sc=usat'
 #search_term='(the OR a OR an) and la=en and sc=atjc'
 #search_term='(the OR a OR an) and la=en and sc=bstngb'
 # search_term='(the OR a OR an) and la=en and sc=lvgs'
 #search_term='(the OR a OR an) and la=en and sc=cgaz'
 
+search_term = 'sc=nytf and la=en and ((auto sector) or (auto industry) or (auto-sector) or (auto-industry) or (automotive sector) or (automotive industry) or (automotive-sector) or (automotive-industry) or (car sector) or (car industry) or (car-sector) or (car-industry))'
 
 #load strings used to define
 f=open("years.txt", "r")
@@ -333,7 +335,11 @@ for rep in range(start_date,end_date):
                 company_names_all=browser.find_element_by_xpath(company_names_all_path).text
                 n_comp=len(re.split("\n",company_names_all))
                 print("number of companies found: " + str(n_comp))
-                if n_comp<100: browser.find_element_by_xpath(show_more_button).click()
+                if n_comp<100:
+                    try:
+                        browser.find_element_by_xpath(show_more_button).click()
+                    except:
+                        break
                 if n_comp==100: break
 
             #construct list of the relevant xpaths for company names and corresponding article counts
@@ -370,4 +376,5 @@ for rep in range(start_date,end_date):
 ###############################################################################
 
 df_all['search_term']=search_term
-df_all.to_excel('company_scraper_nytf_from1980_temp.xlsx',index=False)
+# df_all.to_excel('company_scraper_nytf_from1980_temp.xlsx',index=False)
+df_all.to_excel('company_scraper_nytf_auto.xlsx',index=False)
