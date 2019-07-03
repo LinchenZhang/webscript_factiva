@@ -8,7 +8,7 @@ import os
 import pandas as pd
 import re
 from selenium import webdriver
-
+import numpy as np
 
 #change the working directory
 os.chdir('/Users/linchenzhang/Desktop/nimark_RA/webscript_factiva/web_script/reintroductionandrequest/')
@@ -32,7 +32,13 @@ end_date=196 # end at 2018 Q4
 
 df_all=pd.DataFrame(columns=['comp_name','comp_count','n_comp','n_articles','start_date','end_date'])
 
+parse_excel = pd.ExcelFile("extracted_paragraph_n_grams_edited.xlsx")
+parse_excel = parse_excel.parse("Sheet2")
+industry_name = list(parse_excel['industry_name'])
+print(industry_name)
 
+category = list(parse_excel['category'])
+print(category)
 #%%############################################################################
 # Define some basic functions
 ###############################################################################
@@ -44,6 +50,32 @@ def save_all_of_class(browser,classname):
         text_temp=temp.text
         text_all.append(text_temp)
     return text_all
+
+def parse_sector(source, sector_name):
+    """
+    parse a sector name to searhing terms we put in factiva
+    """
+    sub_industry = []
+    sector_name = str(sector_name)
+    string1 = 'sc='+str(source)+' and la=en and ('
+
+    category_array = np.array(category)
+    indexs = np.where(category_array == sector_name)
+    sub_industry = list(np.array(industry_name)[indexs])
+
+    string2 = ''
+    print(sub_industry)
+    for sub in sub_industry:
+        string3 = '('+sub+' sector) or ('+sub+' industry) or ('+sub+'-sector) or ('+sub+'-industry)'
+        string2 = string2 + string3
+        if sub_industry[-1]==sub:
+            string2 = string2+')'
+        else:
+            string2 = string2+' or '
+    string = string1+string2
+    return string
+
+# print(parse_sector('nydf', 'auto'))
 
 
 #%%############################################################################
@@ -66,9 +98,9 @@ def save_all_of_class(browser,classname):
 #search_term='(the OR a OR an) and la=en and sc=bstngb'
 # search_term='(the OR a OR an) and la=en and sc=lvgs'
 #search_term='(the OR a OR an) and la=en and sc=cgaz'
-
-search_term = 'sc=nytf and la=en and ((auto sector) or (auto industry) or (auto-sector) or (auto-industry) or (automotive sector) or (automotive industry) or (automotive-sector) or (automotive-industry) or (car sector) or (car industry) or (car-sector) or (car-industry))'
-
+# search_term = 'sc=nytf and la=en and ((tech sector) or (tech industry) or (tech-sector) or (tech-industry) or (techmotive sector) or (automotive industry) or (automotive-sector) or (automotive-industry) or (car sector) or (car industry) or (car-sector) or (car-industry))'
+# search_term = 'sc=nytf and la=en and ((auto sector) or (auto industry) or (auto-sector) or (auto-industry) or (automotive sector) or (automotive industry) or (automotive-sector) or (automotive-industry) or (car sector) or (car industry) or (car-sector) or (car-industry))'
+search_term = parse_sector('nytf', 'services')
 #load strings used to define
 f=open("years.txt", "r")
 years = f.readlines()
@@ -308,7 +340,7 @@ for rep in range(start_date,end_date):
             print("waiting for the search button")
 
     #scrape the FIRST page of the main data
-    for waiting in range(1,50):
+    for waiting in range(1,20):
         try:
             headlines_current=save_all_of_class(browser,'enHeadline')
             leadfields_current=save_all_of_class(browser,'leadFields')
@@ -377,4 +409,4 @@ for rep in range(start_date,end_date):
 
 df_all['search_term']=search_term
 # df_all.to_excel('company_scraper_nytf_from1980_temp.xlsx',index=False)
-df_all.to_excel('company_scraper_nytf_auto.xlsx',index=False)
+df_all.to_excel('nytf_service.xlsx',index=False)
