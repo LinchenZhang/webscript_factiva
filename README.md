@@ -5,7 +5,7 @@
 1. Git clone this webscript_factiva repository.
 2. Navigate to repository in command line/terminal and open the webscript sub-directory.
 3. Install all necessary packages as per Requirement.md.
-4. Call python cornell.py.
+4. Call cornell.py.
 5. Relevant outputs (excel files) are also listed in the repository.
 
 # Files:
@@ -14,6 +14,9 @@
 * factiva_scraper_uppsala_company_names_v4.py: Uppsala version python code of webscript in Factiva
 * factiva_scraper_uppsala_company_info_v3.py: Futher modification of webscript data got using Uppsala website
 * extracted_paragraph_n_grams_edited.xlsx: source excel to match sector with category
+* years.txt: support file to call when seraching by date
+* months.txt: support file to call when seraching by date
+* last_days.txt: support file to call when seraching by date
 * output excel files: The remaining excel files are all outputs. The name of an excel file is self-explanatory.
 
 #Notes:
