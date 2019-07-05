@@ -20,5 +20,5 @@
 * last_days.txt: support file to call when seraching by date
 * output excel files: The remaining excel files are all outputs. The name of an excel file is self-explanatory.
 
-#Notes:
+# Notes:
 factiva_scraper_uppsala_company_info_v3.py and factiva_scraper_uppsala_company_names_v4.py are preivous work of Stefan in Uppsala University which I referred a lot in creating my own Cornell version of webscript in Factiva.
