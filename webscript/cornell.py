@@ -11,7 +11,8 @@ from selenium import webdriver
 import numpy as np
 
 #change the working directory
-os.chdir('/Users/linchenzhang/Desktop/nimark_RA/webscript_factiva/webscript/')
+# os.chdir('/Users/linchenzhang/Desktop/nimark_RA/webscript_factiva/webscript/')
+os.chdir(os.getcwd())
 # os.chdir('Users\\linchenzhang\\Desktop\\nimark_RA\\webscript_factiva\\web_script\\reintroductionandrequest\\')
 # os.chdir('C:\\Users\\messi\\Desktop\\RAnimark\\web_script\\reintroductionandrequest\\')
 #start and end dates of the scrapesstart_date=168
@@ -135,7 +136,8 @@ end_dates=end_dates[2::3]
 #go to the uppsala library database website
 url = 'https://newcatalog.library.cornell.edu/databases/subject/Economics'
 # url='http://www.ub.uu.se/soktips-och-sokteknik/databaser-a-o/'
-browser=webdriver.Firefox(executable_path='/Users/linchenzhang/Desktop/nimark_RA/webscript_factiva/webscript/geckodriver')
+# browser=webdriver.Firefox(executable_path='/Users/linchenzhang/Desktop/nimark_RA/webscript_factiva/webscript/geckodriver')
+browser=webdriver.Firefox(executable_path=os.getcwd()+'/geckodriver')
 # browser=webdriver.Firefox(executable_path=r'C:\Users\messi\Desktop\RAnimark\web_script\reintroductionandrequest\geckodriver.exe')
 #browser=webdriver.Edge()
 browser.get(url)
