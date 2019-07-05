@@ -2,6 +2,7 @@
 # Runs a factiva search and saves the number of articles found as time series
 ###############################################################################
 
+
 #import python libraries
 import time
 import os
@@ -90,10 +91,8 @@ def parse_sector(source, sector_name):
 #search_term="(hd=industry or hd=sector) and (sales or quarter or fiscal) and (sc=j or sc=nytf or sc=wp or sc=bstngb or sc=usat or sc=phli)"
 #search_term='(hd=industry or hd=sector) and ns=ccat and (sc=j or sc=nytf or sc=wp or sc=bstngb or sc=usat or sc=phli)'
 #search_term='(hd="auto industry" or hd="auto sector") and ns=ccat and (sc=j or sc=nytf or sc=wp or sc=bstngb or sc=usat or sc=phli)'
-
-
 #search_term='(the OR a OR an) and la=en and sc=j'
-# search_term='(the OR a OR an) and la=en and sc=nytf'
+#search_term='(the OR a OR an) and la=en and sc=nytf'
 #search_term='(the OR a OR an) and la=en and sc=usat'
 #search_term='(the OR a OR an) and la=en and sc=atjc'
 #search_term='(the OR a OR an) and la=en and sc=bstngb'
@@ -151,16 +150,10 @@ time.sleep(1)
 
 # continue_link = driver.find_element_by_link_text('Continue')
 
-#click the factiva link to get access via the uppsala licence
-# factiva_path='//*[@id="F"]'
+#click the factiva link to get access via the Cornell licence
 link=browser.find_element_by_link_text('Factiva')
 link.click()
 time.sleep(1)
-
-#switch to popup and wait
-# handle_new=browser.window_handles[1]
-# browser.switch_to_window(handle_new)
-# time.sleep(10)
 
 for waiting in range(1,500):
     try:
@@ -200,21 +193,16 @@ for waiting in range(1,500):
 #%%############################################################################
 # enter the region and other search options here (then run rest of code)
 ###############################################################################
-# genius_bar = '/html/body/form[2]/div[2]/div[2]/div/table/tbody/tr[2]/td/div[1]/div[1]/table/tbody/tr/td[2]/div[2]/div[1]/span/div/div'
-# genius_bar = '/html/body/form[2]/div[2]/div[2]/div/table/tbody/tr[2]/td/div[1]/div[1]/table/tbody/tr/td[2]/div[2]/div[1]/span/div/label[2]'
-# genius_bar_button = browser.find_element_by_xpath(genius_bar)
-# genius_bar_button.click()
-# new_ftx = '/html/body/form[2]/div[2]/div[2]/div/table/tbody/tr[2]/td/div[1]/div[1]/table/tbody/tr/td[2]/div[2]/div[1]/span/div/div'
-new_ftx = '/html/body/form[2]/div[2]/div[2]/div/table/tbody/tr[2]/td/div[1]/div[1]/table/tbody/tr/td[2]/div[2]/div[2]/div/div[1]/div[2]/div'
+
 #identify the search field and enter the desired search text
 
 search_field=browser.find_element_by_id('ftx')
 search_field.click()
-# search_field=browser.find_element_by_xpath(new_ftx)
+
 search_definition=search_term
 print(search_definition)
 print(search_field)
-# search_field.click()
+
 search_field.send_keys(search_definition)
 
 #switch to date range entry mode and enter the desired date range
@@ -307,31 +295,6 @@ for rep in range(start_date,end_date):
             print('wait2')
             print("waiting to enter dates and search term")
 
-        # try:
-        #     print("start_date")
-        #     print(start_dates)
-        #     print(start_dates[rep])
-        #     date1.clear()
-        #     date1.click()
-        #     date1.send_keys(start_dates[rep])
-        #
-        #     print("end_date")
-        #     print(end_dates)
-        #     print(end_dates[rep])
-        #     date2.clear()
-        #     date2.click()
-        #     date2.send_keys(end_dates[rep])
-        #
-        #     search_field.clear()
-        #     search_field.click()
-        #     search_field.send_keys(search_definition)
-        #     print('try2')
-        #     break
-        # except:
-        #     time.sleep(1)
-        #     print('wait2')
-        #     print("waiting to enter dates and search term")
-
     #press the search button
     for waiting in range(1,50):
         try:
@@ -413,5 +376,4 @@ for rep in range(start_date,end_date):
 ###############################################################################
 
 df_all['search_term']=search_term
-# df_all.to_excel('company_scraper_nytf_from1980_temp.xlsx',index=False)
 df_all.to_excel('wsj_services.xlsx',index=False)
