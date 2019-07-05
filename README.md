@@ -7,6 +7,7 @@
 3. Install all necessary packages as per Requirement.md.
 4. Call cornell.py.
 5. Relevant outputs (excel files) are also listed in the repository.
+6. To change searching sector or dataset, just change the line "search_term = parse_sector('D', 'S')", where D/S stands for new dataset/sector you are looking for. Note that the dataset is a Factiva encoded string. (E.g Wall Street Journal is 'j'). Also, change the saving excel file name in last line with your new dataset/sector.
 
 # Files:
 * cornell.py: Cornell version python code of webscript in Factiva
