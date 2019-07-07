@@ -18,12 +18,12 @@ os.chdir(os.getcwd())
 # os.chdir('C:\\Users\\messi\\Desktop\\RAnimark\\web_script\\reintroductionandrequest\\')
 #start and end dates of the scrapesstart_date=168
 
-start_date=40 # start in 1980 Q1 (for WSJ)
+# start_date=40 # start in 1980 Q1 (for WSJ)
 # start_date=41 # start in 1980 Q2 (for NYT)
 #start_date=108 # start in 1997 Q1 (for USAT) (company information starts only in 1997)
 #start_date=108 # start in 1997 Q1 (for atjc) (company information starts only in 1997)
 #start_date=108 # start in 1997 Q1 (for bstngb) (company information starts only in 1997)
-# start_date=108 # start in 1997 Q1 (for cgaz) (company information starts only in 1997)
+start_date=108 # start in 1997 Q1 (for cgaz/lvgs) (company information starts only in 1997)
 
 
 
@@ -101,7 +101,7 @@ def parse_sector(source, sector_name):
 # search_term = 'sc=nytf and la=en and ((tech sector) or (tech industry) or (tech-sector) or (tech-industry) or (techmotive sector) or (automotive industry) or (automotive-sector) or (automotive-industry) or (car sector) or (car industry) or (car-sector) or (car-industry))'
 # search_term = 'sc=nytf and la=en and ((auto sector) or (auto industry) or (auto-sector) or (auto-industry) or (automotive sector) or (automotive industry) or (automotive-sector) or (automotive-industry) or (car sector) or (car industry) or (car-sector) or (car-industry))'
 # search_term = parse_sector('nytf', 'services')
-search_term = parse_sector('j', 'services')
+search_term = parse_sector('lvgs', 'tech')
 # search_term = parse_sector('j', 'tech')
 
 #load strings used to define
@@ -376,4 +376,4 @@ for rep in range(start_date,end_date):
 ###############################################################################
 
 df_all['search_term']=search_term
-df_all.to_excel('wsj_services.xlsx',index=False)
+df_all.to_excel('lvgs_tech.xlsx',index=False)
