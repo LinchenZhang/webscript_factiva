@@ -19,11 +19,11 @@ os.chdir(os.getcwd())
 #start and end dates of the scrapesstart_date=168
 
 # start_date=40 # start in 1980 Q1 (for WSJ)
-# start_date=41 # start in 1980 Q2 (for NYT)
+start_date=41 # start in 1980 Q2 (for NYT)
 #start_date=108 # start in 1997 Q1 (for USAT) (company information starts only in 1997)
 #start_date=108 # start in 1997 Q1 (for atjc) (company information starts only in 1997)
 #start_date=108 # start in 1997 Q1 (for bstngb) (company information starts only in 1997)
-start_date=108 # start in 1997 Q1 (for cgaz/lvgs) (company information starts only in 1997)
+# start_date=108 # start in 1997 Q1 (for cgaz/lvgs) (company information starts only in 1997)
 
 
 
@@ -101,7 +101,7 @@ def parse_sector(source, sector_name):
 # search_term = 'sc=nytf and la=en and ((tech sector) or (tech industry) or (tech-sector) or (tech-industry) or (techmotive sector) or (automotive industry) or (automotive-sector) or (automotive-industry) or (car sector) or (car industry) or (car-sector) or (car-industry))'
 # search_term = 'sc=nytf and la=en and ((auto sector) or (auto industry) or (auto-sector) or (auto-industry) or (automotive sector) or (automotive industry) or (automotive-sector) or (automotive-industry) or (car sector) or (car industry) or (car-sector) or (car-industry))'
 # search_term = parse_sector('nytf', 'services')
-search_term = parse_sector('lvgs', 'tech')
+search_term = parse_sector('nytf', 'financial')
 # search_term = parse_sector('j', 'tech')
 
 #load strings used to define
@@ -225,6 +225,7 @@ counter=start_date
 
 #for rep in range(start_date,len(quarters)):
 for rep in range(start_date,end_date):
+    # print(rep)
 
     #find the date and search fields
     for waiting in range(1,500):
@@ -255,6 +256,7 @@ for rep in range(start_date,end_date):
     for waiting in range(1,500):
         try:
             start = start_dates[rep]
+            print ('start='+str(start))
             y1 = start[:4]
             m1 = start[4:6]
             d1 = start[6:]
@@ -296,7 +298,7 @@ for rep in range(start_date,end_date):
             print("waiting to enter dates and search term")
 
     #press the search button
-    for waiting in range(1,50):
+    for waiting in range(1,100):
         try:
             submit=browser.find_element_by_xpath('/html/body/form[2]/div[2]/div[2]/div/div[2]/ul/li[2]/input')
             time.sleep(1)
@@ -308,7 +310,7 @@ for rep in range(start_date,end_date):
             print("waiting for the search button")
 
     #scrape the FIRST page of the main data
-    for waiting in range(1,20):
+    for waiting in range(1,100):
         try:
             headlines_current=save_all_of_class(browser,'enHeadline')
             leadfields_current=save_all_of_class(browser,'leadFields')
@@ -368,6 +370,8 @@ for rep in range(start_date,end_date):
 
     #go back to the search page
     df_all=df_all.append(df_current)
+    df_all['search_term']=search_term
+    df_all.to_excel('NYT_financial.xlsx',index=False)
     # browser.get("https://global.factiva.com/sb/default.aspx")
     browser.get("https://global-factiva-com.proxy.library.cornell.edu/sb/default.aspx?NAPC=S")
 
@@ -376,4 +380,4 @@ for rep in range(start_date,end_date):
 ###############################################################################
 
 df_all['search_term']=search_term
-df_all.to_excel('lvgs_tech.xlsx',index=False)
+df_all.to_excel('NYT_financial.xlsx',index=False)
