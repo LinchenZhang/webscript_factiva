@@ -15,7 +15,7 @@ import numpy as np
 #%%############################################################################
 # Define some basic functions
 ###############################################################################
-def start_date(string):
+def start_date_func(string):
     if string == 'j':
         return 40
     elif string == 'nytf':
@@ -30,7 +30,7 @@ def start_date(string):
         raise 'Wrong String'
 
 
-def end_date(string):
+def end_date_func(string):
     if string == 'lvgs':
         return 172
     else:
@@ -76,105 +76,109 @@ os.chdir(os.getcwd())
 datasets = ['usat']
 sectors = ['auto','tech','services','financial']
 
+
+parse_excel = pd.ExcelFile("extracted_paragraph_n_grams_edited.xlsx")
+parse_excel = parse_excel.parse("Sheet2")
+industry_name = list(parse_excel['industry_name'])
+print(industry_name)
+
+category = list(parse_excel['category'])
+print(category)
+
+
+
+#load strings used to define
+f=open("years.txt", "r")
+years = f.readlines()
+years = [a.strip('\n') for a in years]
+#load the months
+f=open("months.txt", "r")
+months = f.readlines()
+months = [a.strip('\n') for a in months]
+#load the months
+f=open("last_days.txt", "r")
+last_days = f.readlines()
+last_days = [a.strip('\n') for a in last_days]
+#create the first days
+first_days=[1 for a in last_days]
+
+#date indexes at quarterly frequency
+years_quarterly=years[0::3]
+n_years=len(years)/4
+quarters=[1,2,3,4]*48
+
+#combined date strings for the factiva search
+start_dates=[str(years[i])+str(months[i])+"01" for i in range(0,len(years))]
+end_dates=[str(years[i])+str(months[i])+str(last_days[i]) for i in range(0,len(years))]
+
+#keep only quarterly dates
+start_dates=start_dates[0::3]
+end_dates=end_dates[2::3]
+
+#go to Cornell library database website
+url = 'https://newcatalog.library.cornell.edu/databases/subject/Economics'
+# url = "http://resolver.library.cornell.edu/misc/4394263"
+# browser=webdriver.Firefox(executable_path='/Users/linchenzhang/Desktop/nimark_RA/webscript_factiva/webscript/geckodriver')
+browser=webdriver.Firefox(executable_path=os.getcwd()+'/geckodriver')
+# browser=webdriver.Firefox(executable_path=r'C:\Users\messi\Desktop\RAnimark\web_script\reintroductionandrequest\geckodriver.exe')
+
+browser.get(url)
+time.sleep(1)
+
+#click the factiva link to get access via the Cornell licence
+link=browser.find_element_by_link_text('Factiva')
+link.click()
+time.sleep(1)
+
+# for waiting in range(1,500):
+#     try:
+#         #change language to english
+#         button_settings=browser.find_element_by_xpath("/html/body/div[2]/div/ul[2]/li/a/span")
+#         button_settings.click()
+#         time.sleep(3)
+#         button_language=browser.find_element_by_xpath("/html/body/div[2]/div/ul[2]/li/div/ul/li[2]/a")
+#         button_language.click()
+#         time.sleep(3)
+#         button_english=browser.find_element_by_xpath("/html/body/div[2]/div/ul[2]/li/div/ul/li[2]/ul/li[1]/a")
+#         button_english.click()
+#         time.sleep(3)
+#         break
+#     except:
+#         time.sleep(1)
+#         print("waiting for search path")
+
+
+#%%############################################################################
+# Wait for the search page to load
+###############################################################################
+
+
+for waiting in range(1,500):
+    try:
+        search_path='/html/body/div[2]/div/ul[1]/li[2]/a'
+        link2=browser.find_element_by_xpath(search_path)
+        link2.click()
+        time.sleep(0)
+        print('try0')
+        break
+    except:
+        time.sleep(1)
+        print("waiting for search path")
+
+
+
+
 for string in datasets:
     for sector in sectors:
         print("string="+string)
         print("sector="+sector)
 
-        start_date = start_date(string)
-        end_date = end_date(string)
+        start_date = start_date_func(string)
+        end_date = end_date_func(string)
         # end_date=196 # end at 2018 Q4
-
-
-        df_all=pd.DataFrame(columns=['comp_name','comp_count','n_comp','n_articles','start_date','end_date'])
-
-        parse_excel = pd.ExcelFile("extracted_paragraph_n_grams_edited.xlsx")
-        parse_excel = parse_excel.parse("Sheet2")
-        industry_name = list(parse_excel['industry_name'])
-        print(industry_name)
-
-        category = list(parse_excel['category'])
-        print(category)
-
         search_term = parse_sector(string, sector)
 
-        #load strings used to define
-        f=open("years.txt", "r")
-        years = f.readlines()
-        years = [a.strip('\n') for a in years]
-        #load the months
-        f=open("months.txt", "r")
-        months = f.readlines()
-        months = [a.strip('\n') for a in months]
-        #load the months
-        f=open("last_days.txt", "r")
-        last_days = f.readlines()
-        last_days = [a.strip('\n') for a in last_days]
-        #create the first days
-        first_days=[1 for a in last_days]
-
-        #date indexes at quarterly frequency
-        years_quarterly=years[0::3]
-        n_years=len(years)/4
-        quarters=[1,2,3,4]*48
-
-        #combined date strings for the factiva search
-        start_dates=[str(years[i])+str(months[i])+"01" for i in range(0,len(years))]
-        end_dates=[str(years[i])+str(months[i])+str(last_days[i]) for i in range(0,len(years))]
-
-        #keep only quarterly dates
-        start_dates=start_dates[0::3]
-        end_dates=end_dates[2::3]
-
-        #go to Cornell library database website
-        # url = 'https://newcatalog.library.cornell.edu/databases/subject/Economics'
-        url = "http://resolver.library.cornell.edu/misc/4394263"
-        # browser=webdriver.Firefox(executable_path='/Users/linchenzhang/Desktop/nimark_RA/webscript_factiva/webscript/geckodriver')
-        browser=webdriver.Firefox(executable_path=os.getcwd()+'/geckodriver')
-        # browser=webdriver.Firefox(executable_path=r'C:\Users\messi\Desktop\RAnimark\web_script\reintroductionandrequest\geckodriver.exe')
-
-        browser.get(url)
-        time.sleep(1)
-
-        #click the factiva link to get access via the Cornell licence
-        # link=browser.find_element_by_link_text('Factiva')
-        # link.click()
-        # time.sleep(1)
-
-        for waiting in range(1,500):
-            try:
-                #change language to english
-                button_settings=browser.find_element_by_xpath("/html/body/div[2]/div/ul[2]/li/a/span")
-                button_settings.click()
-                time.sleep(3)
-                button_language=browser.find_element_by_xpath("/html/body/div[2]/div/ul[2]/li/div/ul/li[2]/a")
-                button_language.click()
-                time.sleep(3)
-                button_english=browser.find_element_by_xpath("/html/body/div[2]/div/ul[2]/li/div/ul/li[2]/ul/li[1]/a")
-                button_english.click()
-                time.sleep(3)
-                break
-            except:
-                time.sleep(1)
-                print("waiting for search path")
-
-
-        #%%############################################################################
-        # Wait for the search page to load
-        ###############################################################################
-
-
-        for waiting in range(1,500):
-            try:
-                search_path='/html/body/div[2]/div/ul[1]/li[2]/a'
-                link2=browser.find_element_by_xpath(search_path)
-                link2.click()
-                time.sleep(0)
-                print('try0')
-                break
-            except:
-                time.sleep(1)
-                print("waiting for search path")
+        df_all=pd.DataFrame(columns=['comp_name','comp_count','n_comp','n_articles','start_date','end_date'])
 
         #%%############################################################################
         # enter the region and other search options here (then run rest of code)
@@ -206,13 +210,25 @@ for string in datasets:
         error_dates=[]
 
         #run the loop over the desired dates (this is the main scraping loop)
-        n_rep=len(last_days)
-        counter=start_date
+        # n_rep=len(last_days)
+        # counter=start_date
 
         #for rep in range(start_date,len(quarters)):
         for rep in range(start_date,end_date):
             # print(rep)
-
+            try:
+                print("getdata")
+                data = pd.ExcelFile(str(string)+str(sector)+'.xlsx')
+                df_all = data.parse("Sheet1")
+                # print(list(df_all["start_date"]))
+                m = max(list(df_all["start_date"]))
+                print("m="+str(m))
+                print("data_start_date="+str(start_dates[rep]))
+                if int(start_dates[rep]) <= int(m):
+                    print(str(start_dates[rep])+"is already done")
+                    continue
+            except:
+                print("no excel file now")
             #find the date and search fields
             for waiting in range(1,500):
                 try:
