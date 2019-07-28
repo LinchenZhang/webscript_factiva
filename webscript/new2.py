@@ -240,7 +240,7 @@ for string in datasets:
             # If so, use the data in excel file.
             try:
                 print("getdata")
-                data = pd.ExcelFile(str(string)+str(sector)+'.xlsx')
+                data = pd.ExcelFile(str(string)+'-'+str(sector)+'.xlsx')
                 df_all = data.parse("Sheet1")
                 # print(list(df_all["start_date"]))
                 m = max(list(df_all["start_date"]))
@@ -401,7 +401,7 @@ for string in datasets:
             else:
                 df_all=df_all.append(df_current)
                 df_all['search_term']=search_term
-                df_all.to_excel(str(string)+str(sector)+'.xlsx',index=False)
+                df_all.to_excel(str(string)+'-'+str(sector)+'.xlsx',index=False)
                 browser.get("https://global-factiva-com.proxy.library.cornell.edu/sb/default.aspx?NAPC=S")
             #go back to the search page
 
@@ -411,4 +411,4 @@ for string in datasets:
         ###############################################################################
 
         df_all['search_term']=search_term
-        df_all.to_excel(str(string)+str(sector)+'.xlsx',index=False)
+        df_all.to_excel(str(string)+'-'+str(sector)+'.xlsx',index=False)
