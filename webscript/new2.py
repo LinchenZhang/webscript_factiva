@@ -16,6 +16,9 @@ import numpy as np
 # Define some basic functions
 ###############################################################################
 def start_date_func(string):
+    """
+    returns start_date index given different newspaper inputs
+    """
     if string == 'j':
         return 40
     elif string == 'nytf':
@@ -31,6 +34,9 @@ def start_date_func(string):
 
 
 def end_date_func(string):
+    """
+    returns end_date index given different newspaper inputs
+    """
     if string == 'lvgs':
         return 172
     else:
@@ -39,7 +45,14 @@ def end_date_func(string):
 
 def parse_sector(source, sector_name):
     """
-    parse a sector name to searhing terms we put in factiva
+    parse a sector name with certain source to searching terms we put in factiva
+
+    e.g: parse_sector('nytf','auto') returns
+    "sc=nytf and la=en and ((auto sector) or (auto industry) or (auto-sector) or
+    (auto-industry) or (automotive sector) or (automotive industry) or
+    (automotive-sector) or (automotive-industry) or (car sector) or
+    (car industry) or (car-sector) or (car-industry))"
+
     """
     sub_industry = []
     sector_name = str(sector_name)
@@ -63,6 +76,9 @@ def parse_sector(source, sector_name):
 
 
 def save_all_of_class(browser,classname):
+    """
+    same function used in Uppsala
+    """
     current_hits=browser.find_elements_by_class_name(classname)
     text_all=[]
     for temp in current_hits:
@@ -70,13 +86,18 @@ def save_all_of_class(browser,classname):
         text_all.append(text_temp)
     return text_all
 
-#change the working directory
+#change to current working directory
 os.chdir(os.getcwd())
 
+#list of newspapers we want to search
 datasets = ['usat']
-sectors = ['auto','tech','services','financial']
 
+#list of sectors we want to search
+sectors = ['auto','tech','services','financial','commodities','communications','construction','energy','entertainment','food','gambling','healthcare','hospitatlity','housing','manufacturing','marijuana','tobacco','trade','transport','UNCLEAR','weapons']
 
+#%%############################################################################
+# read and store sector and category information from excel file
+###############################################################################
 parse_excel = pd.ExcelFile("extracted_paragraph_n_grams_edited.xlsx")
 parse_excel = parse_excel.parse("Sheet2")
 industry_name = list(parse_excel['industry_name'])
@@ -95,7 +116,7 @@ years = [a.strip('\n') for a in years]
 f=open("months.txt", "r")
 months = f.readlines()
 months = [a.strip('\n') for a in months]
-#load the months
+#load the days
 f=open("last_days.txt", "r")
 last_days = f.readlines()
 last_days = [a.strip('\n') for a in last_days]
@@ -120,7 +141,8 @@ url = 'https://newcatalog.library.cornell.edu/databases/subject/Economics'
 # url = "http://resolver.library.cornell.edu/misc/4394263"
 # browser=webdriver.Firefox(executable_path='/Users/linchenzhang/Desktop/nimark_RA/webscript_factiva/webscript/geckodriver')
 browser=webdriver.Firefox(executable_path=os.getcwd()+'/geckodriver')
-# browser=webdriver.Firefox(executable_path=r'C:\Users\messi\Desktop\RAnimark\web_script\reintroductionandrequest\geckodriver.exe')
+#here I use MAC version of geckodriver. For windows, change to next line and comment out previous line
+# browser=webdriver.Firefox(executable_path=os.getcwd()+'/geckodriver.exe')
 
 browser.get(url)
 time.sleep(1)
@@ -130,6 +152,7 @@ link=browser.find_element_by_link_text('Factiva')
 link.click()
 time.sleep(1)
 
+#This is the changing language to English part. I comment it our because Cornell already uses English as default value.
 # for waiting in range(1,500):
 #     try:
 #         #change language to english
@@ -166,8 +189,9 @@ for waiting in range(1,500):
         print("waiting for search path")
 
 
-
-
+#%%############################################################################
+# the main for loop of newspapers and sectors
+###############################################################################
 for string in datasets:
     for sector in sectors:
         print("string="+string)
@@ -210,12 +234,10 @@ for string in datasets:
         error_dates=[]
 
         #run the loop over the desired dates (this is the main scraping loop)
-        # n_rep=len(last_days)
-        # counter=start_date
 
-        #for rep in range(start_date,len(quarters)):
         for rep in range(start_date,end_date):
-            # print(rep)
+            # Check if the excel for certain combo of newspaper and sector already exist
+            # If so, use the data in excel file.
             try:
                 print("getdata")
                 data = pd.ExcelFile(str(string)+str(sector)+'.xlsx')
@@ -229,6 +251,7 @@ for string in datasets:
                     continue
             except:
                 print("no excel file now")
+
             #find the date and search fields
             for waiting in range(1,500):
                 try:
@@ -300,10 +323,10 @@ for string in datasets:
                     print("waiting to enter dates and search term")
 
             #press the search button
-            for waiting in range(1,100):
+            for waiting in range(1,200):
                 try:
                     submit=browser.find_element_by_xpath('/html/body/form[2]/div[2]/div[2]/div/div[2]/ul/li[2]/input')
-                    time.sleep(1)
+                    time.sleep(2)
                     submit.click()
                     print('try3')
                     break
@@ -371,8 +394,10 @@ for string in datasets:
                     number += 1
 
             print("number:"+str(number))
+            #True means all are exceptions. No result is found. Just go to next date.
             if number == 50:
                 browser.get("https://global-factiva-com.proxy.library.cornell.edu/sb/default.aspx?NAPC=S")
+            #Else save the current info to excel file and go back to search page
             else:
                 df_all=df_all.append(df_current)
                 df_all['search_term']=search_term
