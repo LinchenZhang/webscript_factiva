@@ -93,7 +93,8 @@ os.chdir(os.getcwd())
 datasets = ['usat']
 
 #list of sectors we want to search
-sectors = ['auto','tech','services','financial','commodities','communications','construction','energy','entertainment','food','gambling','healthcare','hospitatlity','housing','manufacturing','marijuana','tobacco','trade','transport','UNCLEAR','weapons']
+# sectors = ['auto','tech','services','financial','commodities','communications','construction','energy','entertainment','food','gambling','healthcare','hospitatlity','housing','manufacturing','marijuana','tobacco','trade','transport','UNCLEAR','weapons']
+sectors = ['transport','marijuana','tobacco','trade','UNCLEAR','weapons']
 
 #%%############################################################################
 # read and store sector and category information from excel file
@@ -137,8 +138,8 @@ start_dates=start_dates[0::3]
 end_dates=end_dates[2::3]
 
 #go to Cornell library database website
-url = 'https://newcatalog.library.cornell.edu/databases/subject/Economics'
-# url = "http://resolver.library.cornell.edu/misc/4394263"
+# url = 'https://newcatalog.library.cornell.edu/databases/subject/Economics'
+url = "http://resolver.library.cornell.edu/misc/4394263"
 # browser=webdriver.Firefox(executable_path='/Users/linchenzhang/Desktop/nimark_RA/webscript_factiva/webscript/geckodriver')
 browser=webdriver.Firefox(executable_path=os.getcwd()+'/geckodriver')
 #here I use MAC version of geckodriver. For windows, change to next line and comment out previous line
@@ -148,9 +149,9 @@ browser.get(url)
 time.sleep(1)
 
 #click the factiva link to get access via the Cornell licence
-link=browser.find_element_by_link_text('Factiva')
-link.click()
-time.sleep(1)
+# link=browser.find_element_by_link_text('Factiva')
+# link.click()
+# time.sleep(1)
 
 #This is the changing language to English part. I comment it our because Cornell already uses English as default value.
 # for waiting in range(1,500):
@@ -336,7 +337,8 @@ for string in datasets:
 
             number = 0
             #scrape the FIRST page of the main data
-            for waiting in range(0,50):
+            end_number = 8
+            for waiting in range(0,end_number):
 
                 try:
                     headlines_current=save_all_of_class(browser,'enHeadline')
@@ -358,18 +360,51 @@ for string in datasets:
                     show_more_button="/html/body/form[2]/div[2]/div[2]/div[5]/div[2]/div[1]/div/div[2]/div/div[2]/div/div/span[1]"
 
                     n_comp=0
+
                     for i in range(0,100):
+
+                        print("company_clicks: " + str(i))
+
                         #count the number of companies shown
+
                         company_names_all_path="/html/body/form[2]/div[2]/div[2]/div[5]/div[2]/div[1]/div/div[2]/div/div[2]/div/div/ul"
+
                         company_names_all=browser.find_element_by_xpath(company_names_all_path).text
+
                         n_comp=len(re.split("\n",company_names_all))
+
                         print("number of companies found: " + str(n_comp))
+
                         if n_comp<100:
+
                             try:
+
                                 browser.find_element_by_xpath(show_more_button).click()
+
                             except:
-                                break
-                        if n_comp==100: break
+
+                                print("button for 'more companies' not found")
+
+                                if n_comp==100: break
+
+                                if n_comp<10 and i>9: break
+
+                                if n_comp<20 and i>19: break
+
+                                if n_comp<30 and i>29: break
+
+                    # for i in range(0,100):
+                    #     #count the number of companies shown
+                    #     company_names_all_path="/html/body/form[2]/div[2]/div[2]/div[5]/div[2]/div[1]/div/div[2]/div/div[2]/div/div/ul"
+                    #     company_names_all=browser.find_element_by_xpath(company_names_all_path).text
+                    #     n_comp=len(re.split("\n",company_names_all))
+                    #     print("number of companies found: " + str(n_comp))
+                    #     if n_comp<100:
+                    #         try:
+                    #             browser.find_element_by_xpath(show_more_button).click()
+                    #         except:
+                    #             break
+                    #     if n_comp==100: break
 
                     #construct list of the relevant xpaths for company names and corresponding article counts
                     comp_name_x_paths=["/html/body/form[2]/div[2]/div[2]/div[5]/div[2]/div[1]/div/div[2]/div/div[2]/div/div/ul/li[" + str(i) + "]/span[2]/span[1]" for i in range(1,n_comp+1)]
@@ -395,7 +430,7 @@ for string in datasets:
 
             print("number:"+str(number))
             #True means all are exceptions. No result is found. Just go to next date.
-            if number == 50:
+            if number == end_number:
                 browser.get("https://global-factiva-com.proxy.library.cornell.edu/sb/default.aspx?NAPC=S")
             #Else save the current info to excel file and go back to search page
             else:
