@@ -90,13 +90,13 @@ def save_all_of_class(browser,classname):
 os.chdir(os.getcwd())
 
 #list of newspapers we want to search
-# datasets = ['usat']
-datasets = ['j']
+datasets = ['usat']
+# datasets = ['j']
 
 #list of sectors we want to search
-# sectors = ['auto','tech','services','financial','commodities','communications','construction','energy','entertainment','food','gambling','healthcare','hospitatlity','housing','manufacturing','marijuana','tobacco','trade','transport','UNCLEAR','weapons']
+sectors = ['auto','tech','services','financial','commodities','communications','construction','energy','entertainment','food','gambling','healthcare','hospitatlity','housing','manufacturing','marijuana','tobacco','trade','transport','UNCLEAR','weapons']
 # sectors = ['transport','marijuana','tobacco','trade','UNCLEAR','weapons']
-sectors = ['auto']
+# sectors = ['auto']
 
 #%%############################################################################
 # read and store sector and category information from excel file
@@ -143,9 +143,9 @@ end_dates=end_dates[2::3]
 # url = 'https://newcatalog.library.cornell.edu/databases/subject/Economics'
 url = "http://resolver.library.cornell.edu/misc/4394263"
 # browser=webdriver.Firefox(executable_path='/Users/linchenzhang/Desktop/nimark_RA/webscript_factiva/webscript/geckodriver')
-browser=webdriver.Firefox(executable_path=os.getcwd()+'/geckodriver')
+# browser=webdriver.Firefox(executable_path=os.getcwd()+'/geckodriver')
 #here I use MAC version of geckodriver. For windows, change to next line and comment out previous line
-# browser=webdriver.Firefox(executable_path=os.getcwd()+'/geckodriver.exe')
+browser=webdriver.Firefox(executable_path=os.getcwd()+'/geckodriver.exe')
 
 browser.get(url)
 time.sleep(1)
@@ -214,13 +214,13 @@ for string in datasets:
         #identify the search field and enter the desired search text
 
         search_field=browser.find_element_by_id('ftx')
-        search_field.click()
+        # search_field.click()
 
         search_definition=search_term
-        print(search_definition)
-        print(search_field)
+        # print(search_definition)
+        # print(search_field)
 
-        search_field.send_keys(search_definition)
+        # search_field.send_keys(search_definition)
 
         #switch to date range entry mode and enter the desired date range
         date_field_path='/html/body/form[2]/div[2]/div[2]/div/table/tbody/tr[2]/td/div[1]/div[1]/table/tbody/tr/td[2]/div[3]/div[1]/table/tbody/tr/td[1]/select/option[10]'
@@ -394,6 +394,18 @@ for string in datasets:
                         if n_comp<20 and i>19: break
 
                         if n_comp<30 and i>29: break
+
+                        if n_comp<40 and i>39: break
+
+                        if n_comp<50 and i>49: break
+
+                        if n_comp<60 and i>59: break
+
+                        if n_comp<70 and i>69: break
+
+                        if n_comp<80 and i>79: break
+                        
+                        if n_comp<90 and i>89: break
 
                     # for i in range(0,100):
                     #     #count the number of companies shown
