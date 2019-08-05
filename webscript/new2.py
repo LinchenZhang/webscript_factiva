@@ -90,11 +90,13 @@ def save_all_of_class(browser,classname):
 os.chdir(os.getcwd())
 
 #list of newspapers we want to search
-datasets = ['usat']
+# datasets = ['usat']
+datasets = ['j']
 
 #list of sectors we want to search
 # sectors = ['auto','tech','services','financial','commodities','communications','construction','energy','entertainment','food','gambling','healthcare','hospitatlity','housing','manufacturing','marijuana','tobacco','trade','transport','UNCLEAR','weapons']
-sectors = ['transport','marijuana','tobacco','trade','UNCLEAR','weapons']
+# sectors = ['transport','marijuana','tobacco','trade','UNCLEAR','weapons']
+sectors = ['auto']
 
 #%%############################################################################
 # read and store sector and category information from excel file
@@ -241,7 +243,7 @@ for string in datasets:
             # If so, use the data in excel file.
             try:
                 print("getdata")
-                data = pd.ExcelFile(str(string)+'-'+str(sector)+'.xlsx')
+                data = pd.ExcelFile(str(string)+'/'+str(string)+'-'+str(sector)+'.xlsx')
                 df_all = data.parse("Sheet1")
                 # print(list(df_all["start_date"]))
                 m = max(list(df_all["start_date"]))
@@ -385,13 +387,13 @@ for string in datasets:
 
                                 print("button for 'more companies' not found")
 
-                                if n_comp==100: break
+                        if n_comp==100: break
 
-                                if n_comp<10 and i>9: break
+                        if n_comp<10 and i>9: break
 
-                                if n_comp<20 and i>19: break
+                        if n_comp<20 and i>19: break
 
-                                if n_comp<30 and i>29: break
+                        if n_comp<30 and i>29: break
 
                     # for i in range(0,100):
                     #     #count the number of companies shown
@@ -436,7 +438,7 @@ for string in datasets:
             else:
                 df_all=df_all.append(df_current)
                 df_all['search_term']=search_term
-                df_all.to_excel(str(string)+'-'+str(sector)+'.xlsx',index=False)
+                df_all.to_excel(str(string)+'/'+str(string)+'-'+str(sector)+'.xlsx',index=False)
                 browser.get("https://global-factiva-com.proxy.library.cornell.edu/sb/default.aspx?NAPC=S")
             #go back to the search page
 
@@ -446,4 +448,4 @@ for string in datasets:
         ###############################################################################
 
         df_all['search_term']=search_term
-        df_all.to_excel(str(string)+'-'+str(sector)+'.xlsx',index=False)
+        df_all.to_excel(str(string)+'/'+str(string)+'-'+str(sector)+'.xlsx',index=False)
