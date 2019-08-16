@@ -74,6 +74,37 @@ def parse_sector(source, sector_name):
     string = string1+string2
     return string
 
+def parse_multi_sectors(source, list_sector_names):
+    """
+    parse a sector name with certain source to searching terms we put in factiva
+
+    e.g: parse_sector('nytf',['auto','food']) returns
+    "sc=nytf and la=en and ((auto sector) or (auto industry) or (auto-sector) or
+    (auto-industry) or (automotive sector) or (automotive industry) or
+    (automotive-sector) or (automotive-industry) or (car sector) or
+    (car industry) or (car-sector) or (car-industry))"
+
+    """
+    sub_industry = []
+    string1 = 'sc='+str(source)+' and la=en and ('
+
+    category_array = np.array(category)
+    indexs = np.where(category_array in list_sector_names)
+    sub_industry = list(np.array(industry_name)[indexs])
+
+    string2 = ''
+    print(sub_industry)
+    for sub in sub_industry:
+        string3 = '('+sub+' sector) or ('+sub+' industry) or ('+sub+'-sector) or ('+sub+'-industry)'
+        string2 = string2 + string3
+        if sub_industry[-1]==sub:
+            string2 = string2+')'
+        else:
+            string2 = string2+' or '
+    string = string1+string2
+    return string
+
+
 
 def save_all_of_class(browser,classname):
     """
@@ -404,7 +435,7 @@ for string in datasets:
                         if n_comp<70 and i>69: break
 
                         if n_comp<80 and i>79: break
-                        
+
                         if n_comp<90 and i>89: break
 
                     # for i in range(0,100):

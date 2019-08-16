@@ -74,6 +74,54 @@ def parse_sector(source, sector_name):
     string = string1+string2
     return string
 
+def parse_multi_sectors(source, list_sector_names):
+    """
+    parse a sector name with certain source to searching terms we put in factiva
+
+    e.g: parse_sector('nytf',['auto','food']) returns
+    "sc=nytf and la=en and ((auto sector) or (auto industry) or (auto-sector) or
+    (auto-industry) or (automotive sector) or (automotive industry) or
+    (automotive-sector) or (automotive-industry) or (car sector) or
+    (car industry) or (car-sector) or (car-industry))"
+
+    """
+    sub_industry = []
+    string1 = 'sc='+str(source)+' and la=en and ('
+    sector1 = list_sector_names[0]
+    sector2 = list_sector_names[1]
+
+    category_array = np.array(category)
+    indexs1 = np.where(category_array == sector1)
+    indexs2 = np.where(category_array == sector2)
+
+    sub_industry1 = list(np.array(industry_name)[indexs1])
+    sub_industry2 = list(np.array(industry_name)[indexs2])
+    sub_industry = list(set(sub_industry1 + sub_industry2))
+
+
+    string2 = ''
+    print(sub_industry)
+    for sub in sub_industry:
+        string3 = '('+sub+' sector) or ('+sub+' industry) or ('+sub+'-sector) or ('+sub+'-industry)'
+        string2 = string2 + string3
+        if sub_industry[-1]==sub:
+            string2 = string2+')'
+        else:
+            string2 = string2+' or '
+    string = string1+string2
+    return string
+
+
+def liststr_to_string(list_sector_names):
+    """
+    change a list of strings to strings
+    Example: liststr_to_string(['auto','j']) returns 'auto+j'
+    """
+    string = ''
+    for names in list_sector_names:
+        string = string + str(names)+'+'
+    return string[:-1]
+
 
 def save_all_of_class(browser,classname):
     """
@@ -90,10 +138,13 @@ def save_all_of_class(browser,classname):
 os.chdir(os.getcwd())
 
 #list of newspapers we want to search
-datasets = ['usat']
+datasets = ['j', 'nytf','usat']
+# datasets = ['j']
 
 #list of sectors we want to search
-sectors = ['auto','tech','services','financial','commodities','communications','construction','energy','entertainment','food','gambling','healthcare','hospitatlity','housing','manufacturing','marijuana','tobacco','trade','transport','UNCLEAR','weapons']
+# sectors = [['food', 'tobacco']]
+# sectors = ['transport','marijuana','tobacco','trade','UNCLEAR','weapons']
+sectors = [['housing','financial']]
 
 #%%############################################################################
 # read and store sector and category information from excel file
@@ -137,20 +188,20 @@ start_dates=start_dates[0::3]
 end_dates=end_dates[2::3]
 
 #go to Cornell library database website
-url = 'https://newcatalog.library.cornell.edu/databases/subject/Economics'
-# url = "http://resolver.library.cornell.edu/misc/4394263"
+# url = 'https://newcatalog.library.cornell.edu/databases/subject/Economics'
+url = "http://resolver.library.cornell.edu/misc/4394263"
 # browser=webdriver.Firefox(executable_path='/Users/linchenzhang/Desktop/nimark_RA/webscript_factiva/webscript/geckodriver')
-browser=webdriver.Firefox(executable_path=os.getcwd()+'/geckodriver')
+# browser=webdriver.Firefox(executable_path=os.getcwd()+'/geckodriver')
 #here I use MAC version of geckodriver. For windows, change to next line and comment out previous line
-# browser=webdriver.Firefox(executable_path=os.getcwd()+'/geckodriver.exe')
+browser=webdriver.Firefox(executable_path=os.getcwd()+'/geckodriver.exe')
 
 browser.get(url)
 time.sleep(1)
 
 #click the factiva link to get access via the Cornell licence
-link=browser.find_element_by_link_text('Factiva')
-link.click()
-time.sleep(1)
+# link=browser.find_element_by_link_text('Factiva')
+# link.click()
+# time.sleep(1)
 
 #This is the changing language to English part. I comment it our because Cornell already uses English as default value.
 # for waiting in range(1,500):
@@ -194,13 +245,14 @@ for waiting in range(1,500):
 ###############################################################################
 for string in datasets:
     for sector in sectors:
+        excel_sectors_string = liststr_to_string(sector)
         print("string="+string)
-        print("sector="+sector)
+        print("sector="+excel_sectors_string)
 
         start_date = start_date_func(string)
         end_date = end_date_func(string)
         # end_date=196 # end at 2018 Q4
-        search_term = parse_sector(string, sector)
+        search_term = parse_multi_sectors(string, sector)
 
         df_all=pd.DataFrame(columns=['comp_name','comp_count','n_comp','n_articles','start_date','end_date'])
 
@@ -211,13 +263,13 @@ for string in datasets:
         #identify the search field and enter the desired search text
 
         search_field=browser.find_element_by_id('ftx')
-        search_field.click()
+        # search_field.click()
 
         search_definition=search_term
-        print(search_definition)
-        print(search_field)
+        # print(search_definition)
+        # print(search_field)
 
-        search_field.send_keys(search_definition)
+        # search_field.send_keys(search_definition)
 
         #switch to date range entry mode and enter the desired date range
         date_field_path='/html/body/form[2]/div[2]/div[2]/div/table/tbody/tr[2]/td/div[1]/div[1]/table/tbody/tr/td[2]/div[3]/div[1]/table/tbody/tr/td[1]/select/option[10]'
@@ -240,7 +292,7 @@ for string in datasets:
             # If so, use the data in excel file.
             try:
                 print("getdata")
-                data = pd.ExcelFile(str(string)+'-'+str(sector)+'.xlsx')
+                data = pd.ExcelFile(str(string)+'/'+str(string)+'-'+excel_sectors_string+'.xlsx')
                 df_all = data.parse("Sheet1")
                 # print(list(df_all["start_date"]))
                 m = max(list(df_all["start_date"]))
@@ -336,7 +388,8 @@ for string in datasets:
 
             number = 0
             #scrape the FIRST page of the main data
-            for waiting in range(0,50):
+            end_number = 8
+            for waiting in range(0,end_number):
 
                 try:
                     headlines_current=save_all_of_class(browser,'enHeadline')
@@ -358,18 +411,63 @@ for string in datasets:
                     show_more_button="/html/body/form[2]/div[2]/div[2]/div[5]/div[2]/div[1]/div/div[2]/div/div[2]/div/div/span[1]"
 
                     n_comp=0
+
                     for i in range(0,100):
+
+                        print("company_clicks: " + str(i))
+
                         #count the number of companies shown
+
                         company_names_all_path="/html/body/form[2]/div[2]/div[2]/div[5]/div[2]/div[1]/div/div[2]/div/div[2]/div/div/ul"
+
                         company_names_all=browser.find_element_by_xpath(company_names_all_path).text
+
                         n_comp=len(re.split("\n",company_names_all))
+
                         print("number of companies found: " + str(n_comp))
+
                         if n_comp<100:
+
                             try:
+
                                 browser.find_element_by_xpath(show_more_button).click()
+
                             except:
-                                break
+
+                                print("button for 'more companies' not found")
+
                         if n_comp==100: break
+
+                        if n_comp<10 and i>9: break
+
+                        if n_comp<20 and i>19: break
+
+                        if n_comp<30 and i>29: break
+
+                        if n_comp<40 and i>39: break
+
+                        if n_comp<50 and i>49: break
+
+                        if n_comp<60 and i>59: break
+
+                        if n_comp<70 and i>69: break
+
+                        if n_comp<80 and i>79: break
+
+                        if n_comp<90 and i>89: break
+
+                    # for i in range(0,100):
+                    #     #count the number of companies shown
+                    #     company_names_all_path="/html/body/form[2]/div[2]/div[2]/div[5]/div[2]/div[1]/div/div[2]/div/div[2]/div/div/ul"
+                    #     company_names_all=browser.find_element_by_xpath(company_names_all_path).text
+                    #     n_comp=len(re.split("\n",company_names_all))
+                    #     print("number of companies found: " + str(n_comp))
+                    #     if n_comp<100:
+                    #         try:
+                    #             browser.find_element_by_xpath(show_more_button).click()
+                    #         except:
+                    #             break
+                    #     if n_comp==100: break
 
                     #construct list of the relevant xpaths for company names and corresponding article counts
                     comp_name_x_paths=["/html/body/form[2]/div[2]/div[2]/div[5]/div[2]/div[1]/div/div[2]/div/div[2]/div/div/ul/li[" + str(i) + "]/span[2]/span[1]" for i in range(1,n_comp+1)]
@@ -395,13 +493,13 @@ for string in datasets:
 
             print("number:"+str(number))
             #True means all are exceptions. No result is found. Just go to next date.
-            if number == 50:
+            if number == end_number:
                 browser.get("https://global-factiva-com.proxy.library.cornell.edu/sb/default.aspx?NAPC=S")
             #Else save the current info to excel file and go back to search page
             else:
                 df_all=df_all.append(df_current)
                 df_all['search_term']=search_term
-                df_all.to_excel(str(string)+'-'+str(sector)+'.xlsx',index=False)
+                df_all.to_excel(str(string)+'/'+str(string)+'-'+excel_sectors_string+'.xlsx',index=False)
                 browser.get("https://global-factiva-com.proxy.library.cornell.edu/sb/default.aspx?NAPC=S")
             #go back to the search page
 
@@ -411,4 +509,4 @@ for string in datasets:
         ###############################################################################
 
         df_all['search_term']=search_term
-        df_all.to_excel(str(string)+'-'+str(sector)+'.xlsx',index=False)
+        df_all.to_excel(str(string)+'/'+str(string)+'-'+excel_sectors_string+'.xlsx',index=False)
